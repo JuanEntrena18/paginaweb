@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Administrador de Sistemas y Ciberseguridad</title>
+    <link rel="stylesheet" href="./CSS/styles.css">
+    <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+    <script src="https://kit.fontawesome.com/ce8b97e48b.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <header>
+        <div class="cta">
+            <h1>Protege tu Empresa Hoy</h1>
+            <div class="video-container">
+                <video autoplay loop muted>
+                    <source src="./content/video.mp4" type="video/mp4">
+                    Tu navegador no soporta la reproducción de videos.
+                </video>
+                <div class="cta-button">
+                    <a href="#contact">Pedir Presupuestos</a>
+                </div>
+            </div>
+        </div>
+    </header>
+    
+    <section class="services">
+        <h2>Nuestros Servicios</h2>
+        <ul>
+            <li><img src="icons/windows.png" alt="Windows Icon"> Administración de Sistemas Windows</li>
+            <li><img src="icons/linux.png" alt="Linux Icon"> Administrador de Sistemas Linux</li>
+            <li><img src="icons/service_desk.png" alt="Service Desk Icon"> Service Desk</li>
+            <li><img src="icons/siem.png" alt="SIEM Icon"> Implantación de SIEM en Empresas</li>
+            <li><img src="icons/network.png" alt="Network Icon"> Arquitectura de Red</li>
+            <li><img src="icons/electronics.png" alt="Electronics Icon"> Configuración y Puesta en Servicio de Electrónicas de Red</li>
+        </ul>
+    </section>
+    
+    <section class="contact" id="contact">
+        <h2>Contacto para Presupuestos</h2>
+        <form action="enviar_formulario.php" method="post">
+            <label for="name">Nombre:</label>
+            <input type="text" id="name" name="name" required>
+            
+            <label for="email">Correo Electrónico:</label>
+            <input type="email" id="email" name="email" required>
+            
+            <label for="phone">Teléfono:</label>
+            <input type="tel" id="phone" name="phone">
+            
+            <label for="services">Servicios Requeridos:</label>
+            <textarea id="services" name="services" required></textarea>
+            
+            <div class="g-recaptcha" data-sitekey="TU_CLAVE_DEL_SITIO"></div>
+            
+            <button type="submit">Enviar</button>
+        </form>
+    </section>
+    
+    <footer>
+        <p><a href="politica_seguridad.html">Política de Seguridad</a> | <a href="politica_cookies.html">Política de Cookies</a></p>
+    </footer>
+</body>
+</html>
